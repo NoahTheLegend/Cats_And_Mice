@@ -181,7 +181,7 @@ void onCommand( CBlob@ this, u8 cmd, CBitStream @params )
       		if (blobs[i].getTeamNum() == 0)
       		{
 				blobs[i].set_bool("ismining", true);
-				blobs[i].set_u32("miningg", 4*30);
+				blobs[i].set_u32("miningg", 3*30);
 				blobs[i].getSprite().PlaySound("ShieldStart.ogg", 3.0f);
 				ParticleAnimated( "MediumSteam.png", blobs[i].getPosition(), Vec2f(0,0), 0.0f, 1.0f, 1.5, -0.1f, false );
 			}
